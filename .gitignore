@@ -1,0 +1,12 @@
+# Exclude private environment variables and API keys
+.env
+
+# Local Vector Store Database Storage
+chroma_storage/
+
+# Python execution and environment cache tracking
+__pycache__/
+*.pyc
+.venv
+venv/
+env/
