@@ -12,6 +12,18 @@ DocuSearch is a conversational document search assistant powered by a Retrieval-
 
 ---
 
+## System Walkthrough
+
+### 1. Document Ingestion Pipeline
+The sidebar processes multi-page uploads or text input, parsing the text into semantic sentence chunks before securely committing them to local vector storage.
+![Document Ingestion](assets/ingestion_success.png)
+
+### 2. Conversational Q&A and Verification
+Submitting a query triggers vector database retrieval, bringing back high-purity text context, confidence scores, and strict page location data alongside the generated answer.
+![Conversational Search](assets/search_response.png)
+
+---
+
 ## Repository File Structure
 * app.py - Streamlit frontend web dashboard.
 * main.py - FastAPI backend orchestrator and database controller.
@@ -30,7 +42,7 @@ Command: cd docusearch-rag-engine
 Command: pip install -r requirements.txt
 
 ### 2. Configure Credentials
-Create a file named .env in the project root:
+Create a .env file  in the project root:
 Line to add: GEMINI_API_KEY=your_actual_api_key_here
 
 ### 3. Execution
