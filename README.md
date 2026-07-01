@@ -43,7 +43,7 @@ Command: pip install -r requirements.txt
 
 ### 2. Configure Credentials
 Create a .env file  in the project root:
-Line to add: GEMINI_API_KEY=your_actual_api_key_here
+Line to add: GEMINI_API_KEY=your_gemini_api_key_here
 
 ### 3. Execution
 Launch the microservices in two separate terminals:
